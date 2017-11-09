@@ -1,0 +1,268 @@
+/* table style */
+.table {
+	width:100%;
+	background:#ffffff;
+	border-collapse: collapse;
+	table-layout:fixed;
+	word-break:break-all;
+}
+
+.table th, .table td {
+	padding:5px;
+}
+
+.table .center {
+	text-align: center;
+}
+
+.table .left {
+	text-align: left;
+}
+
+.table .right {
+	text-align: right;
+}
+
+.table .top {
+	vertical-align: top;
+}
+
+.table.table-basic {
+	/* basic start */
+}
+
+.table.table-basic thead th {
+	background:#555555;
+	color:#ffffff;
+}
+
+.table.table-basic th, .table.table-basic td {
+	border:1px solid #cccccc;
+}
+
+.table.table-basic tbody th {
+	background:#eeeeee;
+}
+
+.table.table-basic.color1 thead th {
+	background:#428bca;
+}
+
+.table.table-basic.color2 thead th {
+	background:#f0ad4e;
+}
+
+.table.table-basic.color3 thead th {
+	background:#5cb85c;
+}
+
+.table.table-basic.color4 thead th {
+	background:#d9534f;
+}
+
+.table.table-basic.color4 tbody tr:nth-child(even) {
+	background:#f8f8f8;
+}
+
+.table.table-line-bottom {
+	/* line-bottom start */
+}
+
+.table.table-line-bottom thead th {
+	border-top:2px solid #d9534f;
+	border-bottom:1px solid #d9534f;
+}
+
+.table.table-line-bottom tbody td, .table.table-line-bottom tbody th {
+	border-bottom:1px solid #cccccc;
+}
+
+.table.table-line-bottom tbody tr:hover {
+	background:#f8f8f8;
+}
+
+/* button style */
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor:pointer;
+	border:0;
+	background:#474444;
+	color:#ffffff;
+	border-radius: 4px;
+	padding:0.6em 1em;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn.btn-blue {
+	background:#428bca;
+}
+
+.btn.btn-skyblue {
+	background:#5bc0de;
+}
+
+.btn.btn-green {
+	background:#5cb85c;
+}
+
+.btn.btn-warnning {
+	background:#d9534f;
+}
+
+.btn.btn-info {
+	background:#f0ad4e;
+}
+
+.btn.btn-login {
+	width:100%;
+}
+
+/* login form */
+/* font-awesome CDN 같이 가져와야함 */
+.login-form {
+	background:#f8f8f8;
+	padding:10px;
+	position:relative;
+}
+
+.login-form .login-input-area {
+	position:relative;
+	padding-bottom:7px;
+}
+
+.login-form label {
+	vertical-align: top;
+}
+
+.login-form .input-box {
+	border:1px solid #cccccc;
+	width:100%;
+	height:auto;
+	line-height: normal;
+	padding:.9em .5em;
+	font-size:13px;
+	padding-left:55px;
+	font-family: inherit;
+	outline-style: none;
+	border-bottom:2px solid #2574b7;
+	box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+	 -moz-appearance: none;
+	 appearance: none;
+}
+
+.login-form .input-box:focus {
+	background:#fcfbe6;
+}
+
+.login-form .login-icon {
+	position:absolute;
+	top:0;
+	left:0;
+	text-align: center;
+	display:inline-block;
+	padding:0.8em 0.5em;
+	background:#428bca;
+	width:30px;
+	color:#ffffff;
+}
+
+
+/* gnb style */
+.gnb-wrap {
+	width:100%;
+	height:80px;
+	background:#666666;
+	position:relative;
+}
+
+.gnb-wrap:after {
+	content:"";
+	display:block;
+	background:#21a793;
+	width:100%;
+	height:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.gnb {
+	width:800px;
+	margin:0 auto;
+	height:50px;
+	position:relative;
+	z-index:100;
+}
+
+.gnb * {
+	margin:0;
+	padding:0;
+}
+
+.gnb a {
+	color:#666666;
+	display:inline-block;
+}
+
+.gnb li {
+	float:left;
+}
+
+.gnb .on {
+	background:#118977;
+}
+
+.gnb .sub-menu {
+	display:none;
+	position:absolute;
+	top:50px;
+	left:0;
+}
+
+.gnb .gnb-main>a {
+	line-height: 50px;
+	padding:0 49px;
+	color:#ffffff;
+}
+
+.gnb .gnb-main a:hover {
+	background:#118977;
+}
+
+.gnb .gnb-main:hover  .sub-menu {
+	display:block;
+}
+
+.gnb .sub-menu a {
+	background:#666666;
+	color:#ffffff;
+	line-height: 30px;
+	padding:0 10px;
+}
+
+.gnb .sub-menu a:hover {
+	background:#4f4f4f;
+}
+
+.gnb .sub-menu.sub01 {
+	left:220px;
+}
+
+.gnb .sub-menu.sub02 {
+	left:400px;
+}
