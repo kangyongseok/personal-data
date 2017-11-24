@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+
+.wrap {
+    width:100%;
+    font-family: 'Hanna', serif;
+}
+
+.header-fixed {
+    position: fixed;
+    top:0;
+    width:100%;
+    height:60px;
+    border-bottom:1px solid #cccccc;
+    background:#ffffff;
+    z-index: 999999;
+}
+
+
+.header-area {
+    width:90%;
+    height:60px;
+    line-height: 60px;
+    margin:0 auto;
+}
+
+.header-area .logo {
+    padding:0;
+    margin:0;
+    font-weight: normal;
+}
+
+.header-area .logo img {
+    width:40px;
+    height:40px;
+    vertical-align: middle;
+}
+
+.header-area .logo a {
+    color:#2e2e2e;
+    display: inline-block;;
+}
+
+.header-area .logo span {
+    font-size:15px;
+    color:#3fa8eb;
+}
+
+/* main-contents */
+.main-contents {
+    position:static;
+}
+
+.main-contents .sidebar-area {
+    position:fixed;
+}
+
+.sidebar-area {
+    top:61px;
+    left:0;
+    bottom:0;
+    padding:40px 20px 60px 60px;
+    width:260px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+
+.sidebar-area li {
+    margin-bottom:5px;
+}
+
+.sidebar-area .list-title {
+    margin-top:20px;
+    color:#3fa8eb;
+}
+
+.sidebar-area .list-title span {
+    font-size:20px;
+}
+
+.sidebar-area .list-title a {
+    color:#505050;
+}
+
+.sidebar-area .list-title a:hover {
+    border-bottom:2px solid #3fa8eb;
+}
+
+/* contents-area */
+xmp {
+    font-family: "NanumGothic";
+    font-size:14px;
+    background:#f6f6f6;
+    color:#ffffff;
+    float:left;
+    width:370px;
+    height:396px;
+    overflow-y:auto;
+}
+
+.op-col3 {
+    width:750px;
+    float:none;
+    height:150px;
+}
+
+
+
+.contents-area {
+    padding:61px 10px 0 350px;
+}
+
+.contents-table {
+    width:750px;
+    margin:60px 0 100px 200px;
+}
+
+.contents-table .txt {
+    background:#eeeeee;
+    padding:15px;
+}
+
+.contents-area .code-detail:after {
+    content:"";
+    display:block;
+    width:100%;
+    clear:both;
+    margin-bottom:15px;
+}

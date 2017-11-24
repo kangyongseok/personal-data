@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 코드하이라이터  -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <!-- 파비콘  -->
+  <link rel="shortcut icon" href="op_logo.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/op_logo.png">
+
+  <!-- normalize.css CDN -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- FONT AWESOME CDN -->
+  <script src="https://use.fontawesome.com/424cd44a43.js"></script>
+
+  <!-- bxSlider CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/op-reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/op-table.css">
+  <link rel="stylesheet" type="text/css" href="css/op-button.css">
+  <script type="text/javascript" src="js/slideOption.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+
+  <title>인포랑 OPERATING</title>
+
+
+  <!-- IE9버전 이하에 대해 HTML5의 컨텐츠를 다룰 수 있도록 하는 조건부 크로스브라우징 코드  -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- IE9 이하 버전에서 html5 태그 및 일부 css3 선택자 까지도 지원 ie6 이하에서 PNG 투명효과 지원하지않는 오류도 잡아줌 -->
+<!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="wrap">
+      <div class="header-fixed">
+        <header class="header-area">
+          <h1 class="logo">
+            <a href="/"><img src="img/op_logo.png" alt="인포랑 로고"> 인포랑 <span>OPERATING</span></a>
+          </h1>
+        </header>
+      </div>
+      <div class="main-contents">
+        <!-- sidebar -->
+        <div class="sidebar-area">
+          <nav>
+            <ul>
+              <li class="list-title"><i class="fa fa-link" aria-hidden="true"></i> <span>관련 사이트</span>
+                <ul>
+                  <li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
+                  <li><a href="http://fontawesome.io/" target="_blank">Font Awesome Icons</a></li>
+                  <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                  <li><a href="https://bxslider.com/" target="_blank">bxSlider</a></li>
+                  <li><a href="https://validator.w3.org/#validate_by_upload" target="_blank">HTML Validator</a></li>
+                  <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+                </ul>
+              </li>
+              <li class="list-title"><i class="fa fa-paperclip" aria-hidden="true"></i> <span>개요</span>
+                <ul>
+                  <li><a href="#">목적</a></li>
+                </ul>
+              </li>
+              <li class="list-title"><i class="fa fa-list" aria-hidden="true"></i> <span>항목</span>
+                <ul class="scroll">
+                  <li >Table</a></li>
+                  <li >Slide Banner</a></li>
+                  <li >Button</a></li>
+                  <li >Login Form</a></li>
+                  <li >GBN 메뉴</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- contents-area -->
+        <div class="contents-area">
+          <section class="contents-table" id="table">
+            <h1 >TABLE</h1>
+            <p class="txt">
+              - table은 기본 배경이 투명 (흰색이 아님)<br/>
+              - mail 또는 공지사항에 적용시에는 인라인 css사용
+            </p>
+            <div class="code-detail">
+              <h2>class="op-table op-table-basic"</h2>
+              <table class="op-table op-table-basic">
+                <thead>
+                  <tr>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>tbody th</th>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                  </tr>
+                  <tr>
+                    <th>tbody th</th>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- XMP -->
+              <xmp class="prettyprint" style="margin-right:10px;">
+                <table class="op-table op-table-basic">
+                  <thead>
+                    <tr>
+                      <th>thead th</th>
+                      <th>thead th</th>
+                      <th>thead th</th>
+                      <th>thead th</th>
+                      <th>thead th</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tbody td</td>
+                      <td>tbody td</td>
+                      <td>tbody td</td>
+                      <td>tbody td</td>
+                      <td>tbody td</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </xmp>
+              <xmp class="prettyprint">
+                <style>
+                .op-table {
+                  border-collapse: collapse;
+                  width:100%;
+                  background:#ffffff;
+                }
+
+                .op-table th, .op-table td {
+                  padding:7px;
+                }
+
+                .op-table .left {
+                  text-align: left;
+                }
+
+                .op-table .right {
+                  text-align: right;
+                }
+
+                .op-table .center {
+                  text-align: center;
+                }
+
+                /* table-basic */
+                .op-table-basic thead th {
+                  background:#555555;
+                  color:#ffffff;
+                }
+
+                .op-table-basic th, .op-table-basic td {
+                  border:1px solid #cccccc;
+                }
+
+                .op-table-basic tbody th {
+                  background:#eeeeee;
+                }
+
+                </style>
+              </xmp>
+
+              <!-- XMP -->
+            </div>
+
+            <div class="code-detail">
+              <h2>class="op-table op-table-line"</h2>
+              <table class="op-table op-table-line">
+                <thead>
+                  <tr>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>tbody th</th>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                  </tr>
+                  <tr>
+                    <th>tbody th</th>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- xmp -->
+              <xmp class="prettyprint" style="margin-right:10px;">
+               <table class="op-table op-table-line">
+                <thead>
+                  <tr>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                    <th>thead th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>tbody th</th>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                    <td>tbody td</td>
+                  </tr>
+                </tbody>
+              </table>
+            </xmp>
+            <xmp class="prettyprint">
+              <style>
+              /* op-table-line */
+              .op-table-line thead th {
+                border-top:2px solid #d9534f;
+                border-bottom:1px solid #d9534f;
+              }
+
+              .op-table-line tbody th,
+              .op-table-line tbody td {
+                border-bottom:1px solid #cccccc;
+              }
+
+              .op-table-line tbody tr:hover {
+                background:#f8f8f8;
+              }
+              </style>
+            </xmp>
+            <!-- xmp -->
+          </div>
+
+          <div class="code-detail">
+            <h2>class="op-table op-table-basic op-color1"</h2>
+            <table class="op-table op-table-basic op-color1">
+              <thead>
+                <tr>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="code-detail">
+            <h2>class="op-table op-table-basic op-color2"</h2>
+            <table class="op-table op-table-basic op-color2">
+              <thead>
+                <tr>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="code-detail">
+            <h2>class="op-table op-table-basic op-color3"</h2>
+            <table class="op-table op-table-basic op-color3">
+              <thead>
+                <tr>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="code-detail">
+            <h2>class="op-table op-table-basic op-color4"</h2>
+            <table class="op-table op-table-basic op-color4">
+              <thead>
+                <tr>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                  <th>thead th</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+                <tr>
+                  <th>tbody th</th>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                  <td>tbody td</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </section>
+        <!-- table section END -->
+
+
+
+        <section class="contents-table" id="slideBanner">
+          <h1>Slide Banner</h1>
+
+          <div class="bxslider-visual">
+            <div><img src=""  style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual1"></div>
+            <div><img src=""  style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual2"></div>
+            <div><img src=""  style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual3"></div>
+          </div>
+
+          <div class="code-detail">
+            <!-- xmp -->
+            <xmp class="prettyprint op-col3" style="margin-right:10px;">
+              <div class="bxslider-visual">
+                <div><img src="" style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual1"></div>
+                <div><img src="" style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual2"></div>
+                <div><img src="" style="width:1000px;border:0;height:400px;background:#f1f1f1;" alt="visual3"></div>
+              </div>
+            </xmp>
+            <xmp class="prettyprint op-col3" style="margin-right:10px;">
+              <!-- Jquery CDN -->
+              <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+              <!-- bxSlider CDN -->
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+              <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+            </xmp>
+            <xmp class="prettyprint op-col3">
+
+             <script>
+      // 전체 배너
+      $(function(){
+        $('.bxslider-visual').bxSlider({
+          mode: 'horizontal',
+          captions: false,
+        slideWidth: 750, //슬라이드 넓이
+        speed:500, //슬라이드 속도
+        slideMargin:5,
+        pager:true,
+        controls:true,
+        auto:true
+      });
+      });
+      </script>
+    </xmp>
+    <!-- xmp -->
+  </div>
+
+  <div class="bxslider-banner">
+    <div><img src="" alt="img" title="img1" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img2" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img3" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img4" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img5" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img1" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img2" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img3" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img4" style="width:200px;height:40px;background: #eeeeee;"></div>
+    <div><img src="" alt="img" title="img5" style="width:200px;height:40px;background: #eeeeee;"></div>
+  </div>
+
+  <div class="code-detail">
+    <!-- xmp -->
+    <xmp class="prettyprint op-col3" style="margin-right:10px;">
+      <div class="bxslider-banner">
+        <div><img src="" alt="img" title="img1" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img2" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img3" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img4" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img5" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img6" style="width:200px;height:40px;background: #eeeeee;"></div>
+        <div><img src="" alt="img" title="img7" style="width:200px;height:40px;background: #eeeeee;"></div>
+      </div>
+    </xmp>
+    <xmp class="prettyprint op-col3" style="margin-right:10px;">
+      <!-- Jquery CDN -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <!-- bxSlider CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </xmp>
+    <xmp class="prettyprint op-col3">
+
+     <script>
+              //  여러개 슬라이드 광고배너
+              $(function(){
+                $('.bxslider-banner').bxSlider({
+                  mode: 'horizontal',
+                  captions: false,
+            slideWidth: 150, //이미지 1개 넓이
+            speed:1500, // 슬리드 속도
+            slideMargin:5, //이미지 간격
+            pager:false,
+            controls:true,
+            auto:true, //슬라이드 자동
+            maxSlides:5, //최대 보여질 갯수
+            minSlides:1, //최소갯수
+           moveSlides:1 //슬라이스 이동 개수
+         });
+              });
+              </script>
+            </xmp>
+            <!-- xmp -->
+          </div>
+        </section>
+        <!-- slide section END -->
+
+
+        <section class="contents-table" id="button">
+         <h1>BUTTON</h1>
+         <div class="btn-area">
+          <a href="#" role="button" class="op-btn op-btn-blue">.op-btn.op-btn-blue</a>
+          <a href="#" role="button" class="op-btn op-btn-info">.op-btn.op-btn-info</a>
+          <button type="button" class="op-btn">.op-btn</button>
+          <button type="button" class="op-btn op-btn-skyblue">.op-btn.op-btn-skyblue</button>
+          <input type="submit" class="op-btn op-btn-green" value=".op-btn.op-btn-green">
+          <input type="reset" value=".op-btn.btn-warnning" class="op-btn op-btn-warnning">
+        </div>
+
+        <div class="code-detail">
+          <!-- xmp -->
+    <xmp class="prettyprint" style="margin-right:10px;">
+      <a href="#" role="button" class="op-btn op-btn-blue">.op-btn.op-btn-blue</a>
+      <a href="#" role="button" class="op-btn op-btn-info">.op-btn.op-btn-info</a>
+      <button type="button" class="op-btn">.op-btn</button>
+      <button type="button" class="op-btn op-btn-skyblue">.op-btn.op-btn-skyblue</button>
+      <input type="submit" class="op-btn op-btn-green" value=".op-btn.op-btn-green">
+      <input type="reset" value=".op-btn.btn-warnning" class="op-btn op-btn-warnning">
+    </xmp>
+
+      <xmp class="prettyprint" >
+        <style>
+        .op-btn {
+          display: inline-block;
+          font-weight: 400;
+          text-align: center;
+          vertical-align: middle;
+          cursor:pointer;
+          border:0;
+          background:#474444;
+          color:#ffffff;
+          border-radius: 4px;
+          padding:0.6em 1em;
+        }
+
+        .op-btn:hover {
+          opacity: 0.9;
+        }
+
+        .op-btn:focus {
+          outline: none;
+        }
+
+        .op-btn.op-btn-blue {
+          background:#428bca;
+        }
+
+        .op-btn.op-btn-skyblue {
+          background:#5bc0de;
+        }
+
+        .op-btn.op-btn-green {
+          background:#5cb85c;
+        }
+
+        .op-btn.op-btn-warnning {
+          background:#d9534f;
+        }
+
+        .op-btn.op-btn-info {
+          background:#f0ad4e;
+        }
+
+        </style>
+      </xmp>
+          <!-- xmp -->
+        </div>
+      </section>
+      <!-- button section END -->
+
+      <section class="contents-table" id="login">
+        <h1>Login Form</h1>
+
+      </section>
+
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
